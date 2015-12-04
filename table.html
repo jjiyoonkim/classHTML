@@ -10,10 +10,15 @@
 thead: 테이블 머릿글 / 필수사항 아님.
 tfoot: 테이블의 합산정보/ 필수사항 아님(thead와 tbody사이에 tfoot이 있어야 함)
 tbody : 테이블의 컨텐츠-->
-<!--caption:표제 (필수항목: css 에서 눈에 안 보이더라도 써워야 한다.)/ h와는 다른다
+<!--caption:표제 (필수항목: css 에서 눈에 안 보이더라도 써야 한다.)/ h와는 다른다
 summary: 마치 alt처럼 디테일한 부분 설명, 현재표의 자세한 설명/ 필수항목이 아님.-->
 <!-- colgroup은 테이블 아이템 즉 열의 넓에 대한 디자인값을 넣을때 사용된다.
 구성요소로는  빈태그 형식의 col을 사용합니다. col의 속성으로는 style="width:" 로 할수있다. -->
+<!-- colspan:좌우열을 병합할때 사용합니다.
+rowspan: 상하행의 열을 병합할때 사용합니다.
+공통: 값을 줄경우 해당수 만큼의 열과행의 역활을 함. -->
+<!-- tfoot은 tfoot안에 있는 td 끼리 병합 가능하고, tbody도 tbody안에 있는 것 끼리만 병합 가능하다.
+tfoot과 tbody의 td를 병합 할수는 없다. -->
     <table  border ="1" width ="100%" summary="">
         <caption>게시판</caption>
         <colgroup>
@@ -21,27 +26,37 @@ summary: 마치 alt처럼 디테일한 부분 설명, 현재표의 자세한 설
             <col/>
             <col/>
             <col/>
+            <col/><!-- td가 5개이니깐. col5개  -->
         </colgroup>
         <thead>
             <tr>
-                <td></td>
-                <td></td>
+                <td colspan="2">번호</td>
+                <!-- <td>여기는 colspan으로 지워야 합니다.</td> -->
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
         </tdead>
         <tfoot>
+
                 <td>foot</td>
-                <td>foot</td>
+                <td rowspan="2">foot</td>
                 <td>foot</td>
                 <td>foot</td>
                 <td>foot</td>
         </tfoot>
         <tbody>
             <tr>
+
+                <td>item</td>
+                <td rowspan="2">item</td>
                 <td>item</td>
                 <td>item</td>
+                <td>item</td>
+            </tr><tr>
+
+                <td>item</td>
+                <!-- <td>rowspan으로 지워야함</td> -->
                 <td>item</td>
                 <td>item</td>
                 <td>item</td>
