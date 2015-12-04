@@ -5,7 +5,9 @@
     <title>Document</title>
 </head>
 <body>
-    <caption>회원가입</caption>
+
+<fieldset>
+    <legend>회원가입</legend>
         <table border="1">
             <tbody>
                 <tr>
@@ -43,7 +45,7 @@
                     <td>
                         <input type="text">@
                         <input type="text">
-                        <select>
+                        <select id="email">
                              <option id ="email">직접입력</option>
                              <option>naver.com(네이버)</option>
                              <option>nate.com(네이트)</option>
@@ -57,7 +59,7 @@
                 <tr>
                     <th><label for="cellphone">휴대전화</label></th>
                     <td>
-                        <select>
+                        <select id="cellphone">
                             <option id="cellphone">010</option>
                             <option>011</option>
                             <option>016</option>
@@ -81,7 +83,7 @@
                 </tr>
             </tbody>
         </table>
-
         <input type="button" value="회원가입">
+</fieldset>
 </body>
 </html>
