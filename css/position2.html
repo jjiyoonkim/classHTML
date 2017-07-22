@@ -5,33 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <style>
-    .box{
+    div{
       border:1px #F00 solid;
-      width:10px;
-      height:10px;
-      position:relative;
-      margin-left:200px;
-      margin-top:200px;
+      position:absolute;
+      background-image: url(../images/a.jpg);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
     }
+    .box1{left:0; top:0; right:50%; bottom:50%; background-color: #F00;}
+    .box2{left:50%; top:0; right:0; bottom:50%; background-color: #00F;}
+    .box3{left:50%; top:50%; right:0; bottom:0; background-color: #F00;}
+    .box4{left:0; top:50%; right:50%; bottom:0; background-color: #00F;}
 
-    .sub{
-      width: 300px;
-      height:300px;
-      border:1px #F00 solid;
-      position: relative;;
-      left:100px;
-      top:100px;
-    }
+
+
 
   </style>
   <title>Document</title>
 </head>
 <body>
 
-  <div class="box">
-    <div class="sub"></div>
-
-  </div>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="box4"></div>
 
 
 
