@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <style>
+  nav{border:1px #F00 solid;height:40px; text-align: center;}
     ul,li{margin:0;padding:0; list-style: none;}
-    nav>ul>li{float:left; border:1px #F00 solid; width:100px; text-align:center; }
+    nav>ul>li{display:inline-block; vertical-align: top;border:1px #00F solid; width:100px; text-align:center; position: relative;}
     nav>ul>li:hover>ul{display:block;}
-    nav ul ul{border:1px #F00 solid; display:none;}
+    nav ul ul{border:1px #F00 solid; display:none;  margin-top:20px; left:0}
+    nav ul ul li:hover{background: #CCC;}
   </style>
   <title>Document</title>
 </head>
