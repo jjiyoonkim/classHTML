@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    .box{
+      border:1px #F00 solid;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      right:0
+    }
+    .기준{
+      width: 500px;
+      height: 500px;
+      border:1px #F00 solid;
+      position:relative;
+    }
+    .또다른기준{
+      width: 300px;
+      height: 300px;
+      border:1px #F00 solid;
+      position:fixed;
+    }
+  </style>
+
+</head>
+<body>
+<div class="기준">
+  <div class="또다른기준">
+    <div class="box"></div>
+  </div>
+</div>
+
+</body>
+</html>
