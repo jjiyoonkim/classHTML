@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  div{border:1px #F00 solid; position:absolute; transition: 2s cubic-bezier(0, 1.95, 1, -0.61)}
+  .top{background-color: #f00; top:0;right:50%;bottom:50%;left:0;}
+  .right{background-color: #0f0; top:0;right:0;bottom:50%;left:50%;}
+  .bottom{background-color: #f0f; top:50%;right:50%;bottom:0;left:0;}
+  .left{background-color: #00f; top:50%;right:0;bottom:0;left:50%;}
+
+  @media screen and (max-width:480px) {
+    .top{background-color: #f00; top:0;right:0;bottom:50%;left:0;}
+    .right{background-color: #0f0; top:50%;right:0;bottom:0;left:0;}
+    .bottom{background-color: #f0f; top:100%;right:0;bottom:-150%;left:0;}
+    .left{background-color: #00f; top:150%;right:0;bottom:-200%;left:0;}
+  }
+
+
+
+  </style>
+</head>
+<body>
+
+  <div class="top"></div>
+  <div class="right"></div>
+  <div class="bottom"></div>
+  <div class="left"></div>
+
+</body>
+</html>
